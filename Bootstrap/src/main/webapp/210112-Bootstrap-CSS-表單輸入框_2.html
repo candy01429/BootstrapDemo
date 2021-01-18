@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap CSS</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <script src="jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <!--核取方塊checkbox-->
+        <div class="container">
+            <form>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="options" value="e1" checked>
+                        選項一
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="options" value="e2">
+                        選項二
+                    </label>
+                </div>
+                <div class="checkbox disabled"><!--disabled 停用選項按鍵-->
+                    <label>
+                        <input type="checkbox" name="options" value="e3" disabled>
+                        選項三
+                    </label>
+                </div>
+            </form>
+            <hr>
+            <!--核取方塊checkbox 行內排列inline-->
+            <form>
+                <label class="checkbox-inline">
+                    <input type="checkbox" name="options" value="i1" checked>
+                    選項一
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" name="options" value="i2">
+                    選項二
+                </label>
+                <label class="checkbox-inline disabled"><!--disabled 停用選項按鍵-->
+                    <input type="checkbox" name="options" value="i3" disabled>
+                    選項三
+                </label>
+            </form>
+            <hr>
+        </div>
+        <!--按鍵button-->
+        <div class="container">
+            <a class="btn btn-default" role="button" href="#">Button-1</a>
+            <input class="btn btn-default" type="button" value="Button-2">
+            <input class="btn btn-default" type="submit" value="Button-3">
+            <button class="btn btn-default" type="submit">Button-4</button>
+            <button class="btn btn-default disabled" type="button">Disables</button>
+            <button class="btn btn-default active" type="button">Active</button>
+        </div>
+        <hr>
+        <!--設定按鍵色彩-->
+        <div class="container">
+            <button type="button" class="btn btn-default">Default</button><!--灰 預設-->
+            <button type="button" class="btn btn-primary">Primary</button><!--深藍 主要-->
+            <button type="button" class="btn btn-success">Success</button> <!--綠 成功-->
+            <button type="button" class="btn btn-info">Info</button><!--藍 提供訊息-->
+            <button type="button" class="btn btn-warning">Warning</button><!--黃 警告-->
+            <button type="button" class="btn btn-danger">Danger</button><!--紅 危險-->
+            <button type="button" class="btn btn-link">Link</button><!--白底藍字 超連結-->
+        </div>
+        <hr>
+        <!--設定按鍵大小-->
+        <div class="container">
+            <button class="btn btn-default" type="submit">正常</button>
+            <button type="button" class="btn btn-default btn-xs">特小</button>
+            <button type="button" class="btn btn-default btn-sm">小</button>
+            <button type="button" class="btn btn-default btn-lg">大</button>
+            <button type="button" class="btn btn-default btn-block">
+                寬度與父元素相同的(block)
+            </button>
+        </div> 
+    </body>
+</html>
+

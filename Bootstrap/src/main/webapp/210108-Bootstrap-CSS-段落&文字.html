@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap CSS</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <script src="jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <!--lead 強調某段落-->
+        <div class="container">
+            <p>P1</p>
+            <p class="lead">p2 by .lead</p>
+            <p>p3</p>
+            <hr>
+        </div>
+        <!--對齊類別-->
+        <div class="container">
+            <p class="text-left">文字靠左對齊</p>
+            <p class="text-center">文字置中</p>
+            <p class="text-right">文字靠右對齊</p>
+            <p class="text-justify">文...................................字左右對齊</p>
+            <p class="text-nowrap">文...................................字不換行</p>
+        </div>
+        <!--文字排版標籤-->
+        <div class="container">
+            <p>超小螢幕裝置使用<code>.col-xs-1 ~ .col-xs-12</code></p> <!--特定樣式呈現程式碼-->
+            <p>按<kbd>F5</kbd>可以重新載入瀏覽器</p> <!--特定樣式呈現鍵盤按鍵-->
+            <p><var>f(x)</var> = a<var> x </var> +b </p> <!--特定樣式呈現變數-->
+            <p><samp>System.out.println(new java.util.Date())</samp></p> <!--特定樣式呈現輸出程式碼-->
+            <!--特定樣式呈現整段程式碼-->
+            <pre>
+                private static void testCastClass(Manager m){
+                      // 向上轉型
+                      Employee e = (Employee) m;
+                      // 平行移轉
+                      Manager m2 = (Manager) m;
+                      // 向下轉型
+                      Director d = (Director) m;
+                  }
+            </pre>
+        </div> 
+    </body>
+</html>
+

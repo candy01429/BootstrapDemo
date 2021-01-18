@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap CSS</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <script src="jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <!--輸入欄位input-->
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <label for="date">date</label>
+                    <input type="date" class="form-control" id="date">
+                </div>
+
+                <div class="form-group">
+                    <label for="color">color</label>
+                    <input type="color" class="form-control" id="color">
+                </div>
+
+                <div class="form-group">
+                    <label for="url">url</label>
+                    <input type="url" class="form-control" id="url">
+                </div>
+                <button type="submit" class="btn btn-default">submit</button>
+            </form>
+        </div>
+        <hr>
+        <!--多行文字方塊 textarea-->
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <label for="not">comments</label>
+                    <textarea class="form-control" rows="5" id="note"></textarea>
+                </div>
+                <button type="submit" class="btn btn-default">submit</button>
+            </form>
+        </div>
+        <hr>
+        <!--下拉式清單 select option-->
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <label for="county">選擇出生縣市:</label>
+                    <!--加上屬性mutiple為多選-->
+                    <select class="form-control" id="county" multiple>
+                        <option value="台北市">台北市
+                        <option value="新北市" selected>新北市
+                        <option value="台中市">台中市
+                        <option value="台南市">台南市
+                        <option value="高雄市">高雄市           
+                    </select>
+                </div>
+            </form>
+        </div>
+        <hr>
+        <!--選項案件radio 單選按鍵-->
+        <div class="container">
+            <form>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="options" value="e1">
+                        選項一
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="options" value="e2" checked>
+                        選項二
+                    </label>
+                </div>
+                <div class="radio disabled"><!--disabled 停用選項按鍵-->
+                    <label>
+                        <input type="radio" name="options" value="e3" disabled>
+                        選項三
+                    </label>
+                </div>
+            </form>
+        </div>
+        <hr>
+        <!--選項按鍵radio 行內排列inline-->
+        <div class="container">
+            <form>
+                <label class="radio-inline">
+                    <input type="radio" name="options" value="i1">
+                    選項一
+                </label>
+
+                <label class="radio-inline">
+                    <input type="radio" name="options" value="i2" checked>
+                    選項二
+                </label>
+
+                <label class="radio-inline disabled"><!--disabled 停用選項按鍵-->
+                    <input type="radio" name="options" value="i3" disabled>
+                    選項三
+                </label>
+            </form>
+        </div>
+    </body>
+</html>
+
